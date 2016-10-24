@@ -11,11 +11,11 @@ div {
     background-color: #2eb398;
     color: white;
     font-size: 22px;
-}
 
-div p {
-    flex: 1;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
+    p {
+	    flex: 1;
+	    text-align: center;
+	    margin-top: auto;
+	    margin-bottom: auto;
+	}
 }
