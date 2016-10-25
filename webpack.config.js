@@ -8,6 +8,7 @@ module.exports = {
 	devtool: 'eval-source-map',
 	module: {
 		loaders: [
+			{test:/\.js$/, loader:'babel', exclude: /node_modules/, query: { presets: ['es2015'] } },
 			{test:/\.scss$/, loader:'style!css!sass', exclude: /node_modules/}
 		]
 	}
