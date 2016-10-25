@@ -1,4 +1,7 @@
-//  webpack.config.js 
+//  webpack.config.js
+
+var webpack = require('webpack');
+
 module.exports = {
 	entry: './app/index.js',
 	output: {
@@ -10,5 +13,8 @@ module.exports = {
 		loaders: [
 			{test:/\.scss$/, loader:'style!css!sass', exclude: /node_modules/}
 		]
-	}
+	},
+	plugins: [
+		new webpack.optimize.UglifyJsPlugin()
+	]
 };
