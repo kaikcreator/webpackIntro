@@ -5,6 +5,7 @@ module.exports = {
 		filename: 'bundle.js',
 		path: __dirname
 	},
+	devtool: 'eval-source-map',
 	module: {
 		loaders: [
 			{test:/\.scss$/, loader:'style!css!sass', exclude: /node_modules/}
